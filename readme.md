@@ -6,7 +6,7 @@
 
 1. **[pc端](http://8.134.177.78)**: http://8.134.177.78
 
-2. **移动端**：![qrcode](https://github.com/laerpeeK/pet-atlas-2/tree/main/img/qrcode.png)
+2. **移动端**：![qrcode](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/qrcode.png)
 
 
 
@@ -16,19 +16,19 @@
 
 
 
-![pc端宠物图鉴](https://github.com/laerpeeK/pet-atlas-2/tree/main/img/pc_pets.png)
+![pc端宠物图鉴](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/pc_pets.png)
 
 
 
-![pc端宠物详情](https://github.com/laerpeeK/pet-atlas-2/tree/main/img/pc_pet.png)
+![pc端宠物详情](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/pc_pet.png)
 
 
 
-![移动端宠物图鉴](https://github.com/laerpeeK/pet-atlas-2/tree/main/img/mob_pets.png)
+![移动端宠物图鉴](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/mob_pets.png)
 
 
 
-![移动端宠物详情](https://github.com/laerpeeK/pet-atlas-2/tree/main/img/mob_pet.png)
+![移动端宠物详情](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/mob_pet.png)
 
 
 
