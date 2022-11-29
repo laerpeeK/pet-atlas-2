@@ -1,0 +1,11 @@
+.not-found {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../assets/img/404.jpg');
+
+  @include respond(phone) {
+    height: calc(100vh - 46px);
+  }
+}

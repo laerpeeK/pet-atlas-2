@@ -1,0 +1,181 @@
+.pet {
+  max-width: 1200px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  background-color: rgba(234,234,234,0.3);
+  color: $color-brown;
+  position: relative;
+  min-height: calc(100vh - 60px);
+
+  @include respond(phone) {
+    min-height: calc(100vh - 46px);
+    width: 100%;
+  }
+
+  &__graph--1 {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  &__graph-phone--1 {
+    display: none;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      padding: 0px  20px 20px 20px;
+
+      & > div {
+        margin-bottom: 20px;
+
+        & > div:first-child {
+          margin-bottom: 10px;
+        }
+
+        & > div:not(:first-child) {
+          margin-left: 20px;
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+      }
+
+      & >div:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__graph--2 {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    @include respond (tab-land) {
+      width: 100%;
+      padding: 0 20px;
+    };
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    &>div {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      height: 220px;
+
+      &:not(:last-child) {
+        @media only screen and (max-width: 1000px) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &>img {
+        border: 1px solid rgba($color-brown, .3);
+        border-radius: 0 8px 0 8px;
+      }
+
+      &>span {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &__img--exhibition {
+    width: 196px;
+    height: 255px;
+  }
+
+  &__detail {
+    flex-grow: 1;
+    margin-left: 20px;
+
+    &> *:not(:first-child) {
+      margin-bottom: 10px;
+      font-size: 18px;
+
+      @include respond (phone) {
+        font-size: 16px;
+      }
+    }
+
+    &--name {
+      font-size: 22px;
+      margin-bottom: 20px;
+
+      @include respond (phone) {
+        font-size: 20px;
+      }
+    }
+
+    &--formula {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &--reward {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &--magic {
+      .magic-title {
+        margin-bottom: 20px;
+      }
+
+      .magic-item {
+        margin-left: 40px;
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &--story {
+      .story-title {
+        margin-bottom: 20px;
+      }
+
+      .story-item {
+        margin-left: 40px;
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+  }
+
+  &__btn--back {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba($color-brown, .3);
+    z-index: 10;
+    cursor: pointer
+  }
+}

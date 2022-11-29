@@ -1,0 +1,96 @@
+.pets {
+  width: 100%;
+  max-width: 1200px;
+
+  @include respond(tab-land) {
+    max-width: 1000px;
+  }
+
+  @include respond(tab-port) {
+    max-width: 800px;
+  }
+
+  &__sidebar {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid $color-dim-grey-2;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-land) {
+      padding-left: 20px;
+    }
+
+    @include respond(phone) {
+      height: 80px;
+      margin-top: 0px;
+      padding-left: 0px;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+
+    &-text {
+      color: $color-dim-grey-1;
+      font-size: 14px;
+      width: 144px;
+    }
+
+    &-nav {
+      margin-left: 20px;
+
+      @include respond(phone) {
+        margin-left: 0px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &-nav button:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+
+  &__content {
+    margin: 20px 0;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: center;
+    justify-items: center;
+
+    @include respond(tab-port) {
+      grid-gap: 8px;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    &-item {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      @include respond(phone) {
+        width: 80px;
+      }
+    }
+  }
+}
+
+
+.pets_sidebar--number {
+  display: inline-block;
+  font-size: 20px;
+  color: $color-black-2;
+  width: 36px;
+  text-align: center;
+
+  @include respond(phone) {
+    font-size: 16px;
+    width: 30px;
+  }
+}
+

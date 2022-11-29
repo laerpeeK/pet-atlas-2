@@ -1,0 +1,15 @@
+$colors: (
+  metal: #FADD05,
+  wood: #12CB3D,
+  water: #2698EE,
+  fire: #F11414,
+  earth: #AA7D1D,
+  god: #6C48D2
+);
+
+@function color($key) {
+  @if map-has-key($map: $colors, $key: $key) {
+    @warn "在$colors里面没找到 #{$key} 这个 key"
+  }
+  @return map-get($map: $colors, $key: $key);
+}
