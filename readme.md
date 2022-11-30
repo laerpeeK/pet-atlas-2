@@ -40,8 +40,9 @@
 + 框架：vue3 + vue-router + vuex + vuecli
 + 格式化：eslint + prettier
 + css预处理工具：scss
-+ 工具库：axios
-
++ 工具库：
+  + axios
+  + normalize.css
 
 
 ### server
@@ -58,7 +59,11 @@
   + cross-env
 
 
+### data crawing
+
++ 工具： ivx
+
 
 ## 项目启动方式
 
-​	**暂不开发数据库账号密码**
+​	**暂不开放数据库账号密码**
