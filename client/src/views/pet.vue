@@ -18,6 +18,9 @@
         <div class="pet__detail--access" v-if="pet.access">
           获取途径：{{ pet.access }}
         </div>
+        <div class="pet__detail--scene" v-if="pet.scene">
+          相关场景：{{ pet.scene }}
+        </div>
         <div class="pet__detail--formula" v-if="pet.formula">
           合成公式： {{ pet.formula }}
         </div>

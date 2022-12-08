@@ -15,6 +15,7 @@ export type Tpet = {
   reward: string
   magic: TPetMagic[]
   story: string
+  scene: string
   _v?: number
 }
 
