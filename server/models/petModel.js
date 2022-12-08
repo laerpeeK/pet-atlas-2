@@ -28,12 +28,6 @@ const petSchema = mongoose.Schema({
   },
   story: {
     type: String
-    // required: {
-    //   validator: function() {
-    //     return this.attribute === '神'
-    //   },
-    //   message:'神宠必须有对应宠物故事'
-    // }
   },
   access: {
     type: String
@@ -52,6 +46,9 @@ const petSchema = mongoose.Schema({
     }
   }],
   formula: {
+    type: String
+  },
+  scene: {
     type: String
   }
 })
