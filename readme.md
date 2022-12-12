@@ -4,7 +4,7 @@
 
 
 
-1. **[pc端](http://8.134.177.78)**: http://8.134.177.78
+1. [pc端](https://8.134.177.78): https://8.134.177.78
 
 2. **移动端**：![qrcode](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/qrcode.png)
 
