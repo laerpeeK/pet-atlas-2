@@ -33,13 +33,13 @@ export default createStore<IRootState>({
       if (result.status === 'success') {
         commit('changePets', result.data)
         localCache.setLocalCache('pets', result.data)
-        localCache.setLocalCache('petsv', '1.0.5')
+        localCache.setLocalCache('petsv', '1.0.6')
       }
     },
     async getPetsByLocalCache({ commit, dispatch }, payload) {
       const petsv = localCache.getLocalCache('petsv') as string
       const pets = localCache.getLocalCache('pets') as Tpet[]
-      if (pets?.length > 0 && petsv?.match(/1.0.5/)) {
+      if (pets?.length > 0 && petsv?.match(/1.0.6/)) {
         commit('changePets', pets)
       } else {
         localCache.deleteLocalCache('pets')

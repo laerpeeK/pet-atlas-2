@@ -9,88 +9,159 @@
   @include respond(tab-port) {
     max-width: 800px;
   }
-
-  &__sidebar {
-    width: 100%;
-    height: 60px;
-    border-bottom: 1px solid $color-dim-grey-2;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-
-    @include respond(tab-land) {
-      padding-left: 20px;
-    }
-
-    @include respond(phone) {
-      height: 80px;
-      margin-top: 0px;
-      padding-left: 0px;
-      flex-direction: column-reverse;
-      justify-content: flex-start;
-    }
-
-    &-text {
-      color: $color-dim-grey-1;
-      font-size: 14px;
-      width: 144px;
-    }
-
-    &-nav {
-      margin-left: 20px;
-
-      @include respond(phone) {
-        margin-left: 0px;
-        margin-bottom: 12px;
-      }
-    }
-
-    &-nav button:not(:first-child) {
-      margin-left: 16px;
-    }
-  }
-
-  &__content {
-    margin: 20px 0;
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    justify-content: center;
-    justify-items: center;
-
-    @include respond(tab-port) {
-      grid-gap: 8px;
-    }
-
-    @include respond(phone) {
-      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    }
-
-    &-item {
-      width: 100px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer;
-
-      @include respond(phone) {
-        width: 80px;
-      }
-    }
-  }
 }
 
+.pets-sidebar {
+  width: 100%;
+  min-height: 60px;
+  border-bottom: 1px solid $color-dim-grey-2;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
 
-.pets_sidebar--number {
-  display: inline-block;
-  font-size: 20px;
-  color: $color-black-2;
-  width: 36px;
-  text-align: center;
+  @include respond(tab-land) {
+    padding-left: 20px;
+  }
 
   @include respond(phone) {
-    font-size: 16px;
-    width: 30px;
+    padding-left: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    color: $color-dim-grey-1;
+    font-size: 14px;
+    width: 144px;
+
+    .text--number {
+      display: inline-block;
+      font-size: 20px;
+      color: $color-black-2;
+      width: 36px;
+      text-align: center;
+
+      @include respond(phone) {
+        font-size: 16px;
+        width: 30px;
+      }
+    }
+  }
+
+  &__nav {
+    margin-left: 20px;
+
+    @include respond(phone) {
+      margin-left: 0px;
+      margin-bottom: 12px;
+    }
+
+    button:not(:first-child) {
+      margin-left: 16px;
+    }
+
+    .btn {
+      &--circle {
+        width: 32px;
+        height: 32px;
+        border: 1px solid;
+        border-radius: 16px;
+        border-color: currentColor;
+      }
+
+      &--metal {
+        color: $color-metal;
+
+        &active {
+          color: $color-white;
+          background-color: $color-metal;
+        }
+      }
+
+      &--wood {
+        color: $color-wood;
+
+        &active {
+          color: $color-white;
+          background-color: $color-wood;
+        }
+      }
+
+      &--water {
+        color: $color-water;
+
+        &active {
+          color: $color-white;
+          background-color: $color-water;
+        }
+      }
+
+      &--fire {
+        color: $color-fire;
+
+        &active {
+          color: $color-white;
+          background-color: $color-fire;
+        }
+      }
+
+      &--earth {
+        color: $color-earth;
+
+        &active {
+          color: $color-white;
+          background-color: $color-earth;
+        }
+      }
+
+      &--god {
+        color: $color-god;
+
+        &active {
+          color: $color-white;
+          background-color: $color-god;
+        }
+      }
+
+      &--reset {
+        width: 48px;
+        height: 32px;
+        font-size: 16px;
+        color: $color-white;
+        background-color: $color-light-grey-1;
+        letter-spacing: 2px;
+      }
+    }
   }
 }
+
+.pets-content {
+  margin: 20px 0;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: center;
+  justify-items: center;
+
+  @include respond(tab-port) {
+    grid-gap: 8px;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}
+
+.pets-content__item {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  @include respond(phone) {
+    width: 80px;
+  }
+}
+
 

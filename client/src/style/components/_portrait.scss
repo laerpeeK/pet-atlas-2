@@ -6,20 +6,20 @@
     color: $color-brown;
     opacity: .9;
   }
-}
 
-.portrait-img {
-  width: 67px;
-  height: 84px;
-  overflow: hidden;
-}
+  &__img {
+    width: 67px;
+    height: 84px;
+    overflow: hidden;
+  }
 
-.portrait-text{
-  width: 100%;
-  text-align: center;
-  padding: 6px 0;
+  &__text {
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
 
-  @include respond(phone) {
-    font-size: 12px;
+    @include respond(phone) {
+      font-size: 12px;
+    }
   }
 }
