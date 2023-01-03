@@ -10,6 +10,7 @@ node_modules
 /server/dev-data/
 /server/config.env
 /server/public/
+/server/ssl/
 
 # local env files
 .env.local

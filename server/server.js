@@ -1,7 +1,9 @@
+const https = require('https')
+const fs = require('fs')
+const path = require('path')
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const app = require('./app')
-
 process.on('unhandlerRejection', (err) => {
   console.log('UNHANDLER REJECTION! Shutting down...')
   console.log(err.name, err.message)
@@ -39,7 +41,15 @@ mongoose
     process.exit(1)
   })
 
+const privateKey = fs.readFileSync(path.join(__dirname, 'ssl/private.key'), 'utf-8')
+const privateCert = fs.readFileSync(path.join(__dirname, 'ssl/certificate.crt'), 'utf-8')
+const httpsOptions = {
+  key: privateKey,
+  cert: privateCert
+}
+
 const port = process.env.NODE_ENV === 'production'? 4060:3080
-app.listen(port, () => {
+const httpsServer = https.createServer(httpsOptions, app)
+httpsServer.listen(port, () => {
   console.log(`App running on port: ${port}`)
 })
