@@ -1,6 +1,9 @@
 .pets {
   width: 100%;
   max-width: 1200px;
+  min-height: calc(100vh - 60px);
+  position: relative;
+  padding-bottom: 40px;
 
   @include respond(tab-land) {
     max-width: 1000px;
@@ -164,4 +167,17 @@
   }
 }
 
+.pets-footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#EFEFEE, .5);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  a {
+    color: #111111;
+  }
+}
 

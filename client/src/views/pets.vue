@@ -83,6 +83,9 @@
         <div class="portrait__text">{{ item.name }}</div>
       </div>
     </div>
+    <footer class="pets-footer">
+      <a href="https://beian.miit.gov.cn/">粤ICP备2023016800号</a>
+    </footer>
   </div>
 </template>
 <script lang="ts" setup>
