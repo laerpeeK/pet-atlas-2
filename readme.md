@@ -2,12 +2,7 @@
 
 ## 访问地址
 
-
-
-1. [pc端](https://www.laerpeek.top): https://www.laerpeek.top
-
-2. **移动端**：![qrcode](https://github.com/laerpeeK/pet-atlas-2/blob/main/img/qrcode.png)
-
+1. [双端](https://www.laerpeek.top:5600): https://www.laerpeek.top:5600
 
 
 ## 网站效果
@@ -57,12 +52,6 @@
   + helmet
   + xss-clean
   + cross-env
-
-
-### data crawing
-
-+ 工具： ivx
-
 
 ## 项目启动方式
 
